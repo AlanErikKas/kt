@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolimisteenused - kolimisteenus, kolimine, transport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="img/icon.svg">
+</head>
+<body>
+    <!-- Header riba -->
+    <header class="site-header">
+  <div class="header-content">
+    <a href="./index.html"><img src="img/k_logo_tekst.svg" class="logo-img" /></a>
+    
+    <!-- Hamburger icon -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <!-- Sidebar navigation -->
+    <nav class="nav-links" id="mobileMenu">
+      <a href="./info.html">INFO</a>
+      <a href="./kontakt.html">KONTAKT</a>
+      <a href="./index.html#paring">PÄRING</a>
+    </nav>
+  </div>
+
+  <div class="top-bar">
+    <div class="contact">
+      <img src="img/phone.png" alt="Phone Icon" class="phone-icon">
+      <a href="tel:+37256200065" class="phone-link">56 2000 65</a>
+    </div>
+    <img src="img/k_kogemus.svg" alt="Logo" class="header-logo">
+  </div>
+</header>
+    
+    <main>
+        <!-- Pilt ja tekst -->
+        <div class="image-container">
+            <img src="img/k_taust.png" alt="Background Image">
+            <div class="image-text">
+                <h1>Kõik saab</h1>
+				<h1>kindlalt</h1>
+				<h1>kolitud!</h1>
+                <p>Telli teenus meilt, ning avastad, <span class="bold-text">kui lihtne on kolimine punktist A punkti B!</span></p>
+				<div class="image-subtext">
+					<p>info@kolimisteenused.ee</p>
+					<p>+372 5620 0065</p>
+				</div>
+            </div>
+        </div>
+
+
+
+        <!-- Teenused -->
+         <div class="teenused">
+            <div class="teenused-list">
+                <h1>Teenused</h1>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Eraisikute</span> kolimine</p>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Ettevõtete</span> kolimine</p>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Rahvusvaheline</span> kolimine</p>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Ürituste</span> transport</p>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Raskete esemete</span> teisaldamine</p>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Klaverite ja seifide</span> transport</p>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Mööbli</span> montaaž ja kojuvedu</p>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Pakketeenus</span></p>
+                <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Utiliseerimine</span></p>
+            </div>
+            <img src="img/autokastid.png" alt="" class="auto">
+        </div>
+		<div class="paring" id="paring">
+			<div class="paringtext">
+				<h1>SAADA PÄRING</h1>
+				<p>Küsi julgelt meie spetsialistidelt nõu!</p>
+				<div class="paringvorm">
+          <!-- Top dropdown -->
+          <div class="full-width">
+            <label for="teenus">Vali teenus *</label>
+            <select id="teenus" name="teenus" required>
+              <option value="elamud_korterid">Elamute ja korterite kolimine</option>
+              <option value="kontorid_burood">Kontorite ja büroode kolimine</option>
+              <option value="klaver_seif_toostus">Klaverite, seifide ja tööstusseadmete kolimine</option>
+              <option value="rahvusvaheline">Rahvusvaheline kolimine</option>
+              <option value="muu_teenus">Muu teenus</option>
+            </select>
+          </div>
+
+          <!-- Two-column small info fields -->
+          <div class="two-columns">
+            <div class="form-item">
+              <label for="nimi">Tellija nimi *</label>
+              <input type="text" id="nimi" name="nimi" required placeholder="Nimi"/>
+            </div>
+
+            <div class="form-item">
+              <label for="email">E-post *</label>
+              <input type="email" id="email" name="email" required placeholder="E-posti aadress" autocomplete="email"/>
+            </div>
+
+            <div class="form-item">
+              <label for="tel">Telefon</label>
+              <input type="tel" id="tel" name="tel" placeholder="Telefoni number"/>
+            </div>
+
+            <div class="form-item">
+              <label for="aeg">Kolimise aeg *</label>
+              <input type="text" id="aeg" name="aeg" required placeholder="Aeg"/>
+            </div>
+
+            <div class="form-item">
+              <label for="lahte">Lähtekoht *</label>
+              <input type="text" id="lahte" name="lahte" required placeholder="Lähtekoht"/>
+            </div>
+
+            <div class="form-item">
+              <label for="siht">Sihtkoht *</label>
+              <input type="text" id="siht" name="siht" required placeholder="Sihtkoht"/>
+            </div>
+          </div>
+          <!-- HP -->
+          <input type="text" name="company" style="display:none">
+          <!-- Full width textarea -->
+          <div class="full-width">
+            <label for="kirjeldus">Kirjeldus *</label>
+            <textarea id="kirjeldus" name="kirjeldus" rows="4" placeholder="Töö kirjeldus, kolitav vara ja muud täpsustused" required></textarea>
+          </div>
+          <div class="vormnupp">
+            <div class="g-recaptcha" data-sitekey="6LfNpmIsAAAAABpldTmuO_tEVC0QN5a-VLVpDDIY"></div>
+          </div>
+          <div class="vormnupp">
+            <button type="submit">SAADA</button>
+          </div>
+        </div>
+
+
+			</div>
+
+		</div>
+	
+	</main>
+    <!-- Footer riba -->
+    <footer class="site-footer">
+        
+          <p>&copy; Kolimisteenused.ee</p>
+          <nav>
+            <a href="tel:+37256200065">+37256200065</a>
+            <a href="mailto:info@kolimisteenused.ee">info@kolimisteenused.ee</a>
+          </nav>
+          <p> Tähe 106b, Tartu</p>
+        
+      </footer>
+  <!-- Your content goes here -->
+  
+</body>
+</html>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+</script>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kolimisteenused - INFO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/x-icon" href="img/icon.svg">
+</head>
+<body>
+    <!-- Header riba -->
+    <header class="site-header">
+  <div class="header-content">
+    <a href="./index.html"><img src="img/k_logo_tekst.svg" class="logo-img" /></a>
+
+    <!-- Hamburger icon -->
+    <button class="hamburger" id="hamburger">&#9776;</button>
+
+    <!-- Sidebar navigation -->
+    <nav class="nav-links" id="mobileMenu">
+      <a href="./info.html">INFO</a>
+      <a href="./kontakt.html">KONTAKT</a>
+      <a href="./index.html#paring">PÄRING</a>
+    </nav>
+  </div>
+  <div class="top-bar">
+    <div class="contact">
+      <img src="img/phone.png" alt="Phone Icon" class="phone-icon">
+      <a href="tel:+37256200065" class="phone-link">56 2000 65</a>
+    </div>
+    <img src="img/k_kogemus.svg" alt="Logo" class="header-logo">
+  </div>
+</header>  
+<main>
+<div class="info">
+  <div class="info-meist">
+    <h1>Miks meid valida?</h1>
+    <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Meil on kogemust</span> - üle 20 aasta kolimisteenuse pakkujana võimaldab meil olla ettenägelikud ja muuta teie kolimine hästikorraldatud logistiliseks teekonnaks.</p>
+    <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Muudame kolimise mugavaks</span> - mõistame kliendi soove, püüdes leida parima võimaliku viisi kolitava turvaliseks ja asjatundlikuks transpordiks.</p>
+    <p><img src="img/k_point.svg" alt="" class="kpoint"><span class="bold-text">Oleme head suhtlejad</span> - teame täpselt milliseid küsimusi küsida, et kolimine oleks muredevaba ja lihtne.</p>
+    
+  </div>
+  <div class="kast-div">
+    <div class="info-kast">
+      <h1>Kolimiskastid</h1>
+      <p>Pakume erinevaid vahendeid kolimise hõlbsustamiseks! Meie valikust leiab vastupidavaid plastikust ja kergeid tugevast pappmaterjalist kolimiskaste. Küsi julgelt täpsustavat informatsiooni meie spetsialistide käest. <span class="bold-text">Nõustame ja abistame kliente pakkimisest montaažini!</span></p>
+    </div>
+    <img src="img/kast.png" alt="" class="auto">
+  </div>
+</div>
+	
+</main>
+    <!-- Footer riba -->
+<footer class="site-footer">
+        
+          <p>&copy; Kolimisteenused.ee</p>
+          <nav>
+            <a href="tel:+37256200065">+37256200065</a>
+            <a href="mailto:info@kolimisteenused.ee">info@kolimisteenused.ee</a>
+          </nav>
+          <p> Tähe 106b, Tartu</p>
+        
+      </footer>
+  <!-- Your content goes here -->
+  
+</body>
+</html>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+
+  hamburger.addEventListener('click', () => {
+    mobileMenu.classList.toggle('open');
+  });
+</script>
