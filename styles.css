@@ -228,8 +228,7 @@ main {
 	width: 100%;
 	text-align: center;
 	color: white;
-	padding-top: 20px;
-	font-size: 2rem;
+	font-size: 1.5rem;
   height: 100%;
 }
 
@@ -240,18 +239,18 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   padding: 2%;
+  scroll-margin-top: 4rem;
 }
 
 .paringtext h1 {
-	font-size: 5rem;
+	font-size: 4rem;
 }
 
 .paringvorm {
-  padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr;   /* default single column */
   gap: 20px;
-  width: min(900px, 100%);
+  width: min(730px, 100%);
   margin: 0 auto;
   text-align: left;
   height: 100%;
@@ -264,7 +263,7 @@ main {
   border-radius: 2px;
   border-color: white;
   border-radius: 6px;
-  background-color: red; /* modern blue */
+  background-color: rgb(214, 0, 0); /* modern blue */
   color: white;
   cursor: pointer;
   transition: background-color 0.2s;
@@ -321,7 +320,7 @@ input, select, textarea {
   padding: 10px 12px;
   border-radius: 6px;
   border: 1px solid #ccc;
-  font-size: 1.2rem;
+  font-size: 1rem;
   resize: none;
   width: 100%;
 }
