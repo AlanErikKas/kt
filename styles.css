@@ -216,6 +216,16 @@ main {
   cursor: pointer;
 }
 
+.contact-m {
+  display: none;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.contact-m img {
+  padding: 5px;
+}
+
 .paring img{
 	display: block;
 	width: 100%;
@@ -254,6 +264,7 @@ main {
   margin: 0 auto;
   text-align: left;
   height: 100%;
+  padding-bottom: 15px;
 }
 
 .paringvorm button {
@@ -391,6 +402,10 @@ input:focus, select:focus, textarea:focus {
     margin-right: 1rem;
   }
 
+  .contact-m {
+    display: flex;
+  }
+
   .nav-links {
     flex-direction: column;
     position: fixed;
@@ -404,6 +419,7 @@ input:focus, select:focus, textarea:focus {
     transition: right 0.3s ease-in-out;
     z-index: 999;
     margin-right: 0;
+
   }
 
   .nav-links.open {
